@@ -12,3 +12,8 @@ def test_affiche_sans_param_remplace_multiples():
     out = capture_output(affiche)
     assert out.startswith("12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee")
     assert out.endswith("9798FizzBuzz")
+
+from src.fizzbuzz_v2 import affiche as affiche_n
+
+def test_affiche_n_retourne_chaine():
+    assert affiche_n(15) == "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee"
