@@ -17,3 +17,10 @@ from src.fizzbuzz_v2 import affiche as affiche_n
 
 def test_affiche_n_retourne_chaine():
     assert affiche_n(15) == "12Fizz4BuzzFizz78FizzBuzz11Fizz1314FrisBee"
+from src.fizzbuzz_v3 import affiche as affiche_range
+
+def test_affiche_intervalle_5_10():
+    assert affiche_range(5, 10) == "BuzzFizz78FizzBuzz"
+
+def test_affiche_intervalle_10_16():
+    assert affiche_range(10, 16) == "Buzz11Fizz1314FrisBee16"
