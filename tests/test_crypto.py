@@ -15,3 +15,13 @@ def test_crypt_avec_pas_concatene_a_la_fin():
     assert len(core) == len("Az 9!")
     out1 = crypt_v2("Hello", 1)
     assert out1[:-1] != "Hello" and out1.endswith("1")
+
+from src.crypto_v3 import decrypt
+from src.crypto_v2 import crypt as crypt_v2
+
+def test_decrypt_inverse_crypt_v2():
+    original = "Bonjour, le monde! 42"
+    for pas in (1, 3, 9):
+        enc = crypt_v2(original, pas)
+        dec = decrypt(enc)
+        assert dec == original
