@@ -7,3 +7,43 @@ __pycache__/
 
 *.pyc
 
+
+# Virtual environments
+venv/
+.env
+.env.*
+
+# Packaging / build artifacts
+build/
+dist/
+*.egg-info/
+.eggs/
+pip-wheel-metadata/
+
+# Coverage / test reports
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Type checker / linters caches
+.mypy_cache/
+.ruff_cache/
+.pyrightcache/
+
+# Python / tool caches
+.cache/
+.tox/
+.nox/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors / OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+
+# Misc
+.python-version
