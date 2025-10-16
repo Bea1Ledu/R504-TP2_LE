@@ -6,17 +6,29 @@ Voici des commandes à exécuter pour chaque fichiers sur le terminal powershell
 
 ## Exécution des Modules (exemples)
 
-## Question 1 : FizzBuzz
+### Question 1 : FizzBuzz
+
+#### Q1.A - Création d’une première solution
 python -c "from src.fizzbuzz import affiche; affiche()"
+
+#### Q1.B - Première évolution du code
 python -c "from src.fizzbuzz_v2 import affiche; print(affiche(15))"
-python -c "from src.fizzbuzz_v3 import affiche; print(affiche(5, 10)); print(affiche(10, 16))"
 
-## Question 2 : Cryptage 
+#### Q1.C - Deuxième évolution du code
+python -c "from src.fizzbuzz_v3 import affiche; print(affiche(5, 10))"
+python -c "from src.fizzbuzz_v3 import affiche; print(affiche(10, 16))"
 
+
+### Question 2 : Cryptage
+
+#### Q2.A - Création de la première solution
 python -c "from src.crypto import crypt; print(crypt('abc'))"
-python -c "from src.crypto_v2 import crypt; print(crypt('abc', 3))"
-python -c "from src.crypto_v3 import decrypt; print(decrypt('def3'))"
 
+#### Q2.B - Première évolution du code
+python -c "from src.crypto_v2 import crypt; print(crypt('abc', 3))"
+
+#### Q2.C - Deuxième évolution du code : Décryptage
+python -c "from src.crypto_v3 import decrypt; print(decrypt('def3'))"
 
 
 ## Explication du TP ## 
