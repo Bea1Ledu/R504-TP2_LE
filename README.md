@@ -1,4 +1,4 @@
-# Projet R504-TP2 : Développement Dirigé par les Tests en Python
+# TP R504-TP2 :
 
 **IMPORTANT** : Pour exécuter les modules, restez TOUJOURS dans la racine du projet ('R504-TP2_LE') et utilisez 'python -m src.nom_du_fichier'. Ne jamais lancer depuis le dossier 'src/' !
 
